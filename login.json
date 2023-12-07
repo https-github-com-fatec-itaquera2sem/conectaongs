@@ -1,0 +1,20 @@
+{
+    "usuarios": [
+      {
+        "tipo": "usuario",
+        "email": "usuario@example.com",
+        "senha": "senha123"
+      },
+      {
+        "tipo": "administrador",
+        "email": "admin@example.com",
+        "senha": "admin123"
+      },
+
+      {
+        "tipo": "desenvolvedor",
+        "email": "desenv@gmail.com",
+        "senha": "desenv123"
+      }
+    ]
+  }

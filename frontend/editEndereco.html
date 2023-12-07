@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/painel-usuarios.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <title>Controle ONG</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+</head>
+<body>
+
+  <div class="sidebar">
+
+    <a class="logo" href="index.html"><span>Conecta</span>ONGs</a>
+    
+    <div class="sidebar-content">
+        <li class="list">
+            <a href="../login.html" class="nav-link">
+                <span class="link">Lista de usuários</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href=".../login.html" class="nav-link">
+                <span class="link">Lista de ONGs</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="painel-usuarios.html" class="nav-link">
+                <span class="link">Gerenciar Usuários</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="controleOng.html" class="nav-link">
+                <span class="link">Gerenciar ONGs</span>
+            </a>
+        </li>
+        <li class="list">
+          <a href="editEndereco.html" class="nav-link">
+              <span class="link">Editar Endereço</span>
+          </a>
+        </li>
+        <li class="list">
+            <a href=".../login.html" class="nav-link">
+                <span class="link">Gerenciar Permissões</span>
+            </a>
+        </li>
+    </div>
+  </div>
+
+  <div></div>
+  <h1>Editar Endereço </h1>
+  
+  <div class="card">
+  <label for="getUserId">ID da ONG:</label>
+  <input type="number" id="getUserId">
+  <button type="button" class="search" id="buscar" onclick="getEndereco()">Buscar</button>
+  </div>
+
+  <div class="card card-b">
+    <label>Cep: 
+      <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+              onblur="pesquisacep(this.value);" /></label><br />
+          
+      <label>Rua:
+      <input name="rua" type="text" id="rua" size="60" /></label><br />
+          
+      <label>Bairro:
+      <input name="bairro" type="text" id="bairro" size="40" /></label><br />
+          
+      <label>Cidade: 
+      <input name="cidade" type="text" id="cidade" size="40" /></label><br />
+          
+      <label>Estado: 
+      <input name="uf" type="text" id="uf" size="2" /></label><br />
+          
+      <label>IBGE: 
+      <input name="ibge" type="text" id="ibge" size="8" /></label><br />
+
+      <label>Número: 
+        <input name="nmr" type="text" id="nmr" size="8" /></label><br />
+      
+      
+      <button type="button" class="update" id="update-endereco" onclick="updateEndereco()">Atualizar</button>  
+      
+      <button type="button" class="delete" id="excluirbtn" onclick="deleteEndereco()">Excluir</button>
+    </form>
+  </div>
+
+
+</body>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="/js/cep.js"></script>
+<script src="/js/buscaEnderec.js"></script>
+<script src="/js/deleteEndereco.js"></script>
+<script src="/js/updateEndereco.js"></script>
+
+</html>

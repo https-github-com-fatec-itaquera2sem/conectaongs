@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Controle ONG</title>
+</head>
+<body>
+  <header>
+    <nav id="nav-bar">
+        <a class="logo" href="index.html"><span>Conecta</span>ONGs</a>
+        <ul class="nav-list">
+            <li><a href="#nos">SOBRE NÓS</a></li>
+            <li><a href="equipe.html">EQUIPE</a></li>
+        </ul>
+        <div class="acessar">
+            <a href="login.html">
+                <button class="btnacessar">ACESSAR</button>
+            </a>
+        </div>
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()" id="btn-mobile"><img src="css/images/menu.png" alt=""></button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <ul class="nav-list">
+            <li><a href="#nos">SOBRE NÓS</a></li>
+            <li><a href="equipe.html">EQUIPE</a></li>
+        </ul>
+        <div class="acessar">
+            <a href="login.html">
+                <button class="btnacessar">ACESSAR</button>
+            </a>
+        </div>
+    </div>
+  </header>
+
+      <div class="container2">
+
+        <div class="principal">
+            <h1>Painel de Controle - ONGs</h1>
+        </div>
+        
+        <div class="buscarOng">
+          <h3>Buscar ONG</h3>
+          <label for="inputID">ID da ONG:</label>
+          <input type="text" id="inputID">
+          <button class="buscar" id="buscarbtn">Buscar</button>
+        </div>
+
+        <div class="gerenciarOng">
+          <h3>Gerenciar ONG</h3>
+          <label for="inputNome">Nome:</label>
+          <input type="text" id="inputNome">
+          <label for="inputEmail">Email:</label>
+          <input type="text" id="inputEmail">
+          <label for="inputEmail">CNPJ:</label>
+          <input type="text" id="inputCNPJ">
+
+          <!--Adicionar endereço-->
+          <details> 
+            <summary>Adicionar endereço</summary><br>
+            <input placeholder="CEP" name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+            onblur="pesquisacep(this.value);" /></label>
+
+            <input placeholder="LOGRADOURO" name="rua" type="text" id="rua" size="60" /></label>
+
+            <input placeholder="BAIRRO" name="bairro" type="text" id="bairro" size="40" /></label>
+
+            <input placeholder="CIDADE" name="cidade" type="text" id="cidade" size="40" /></label>
+
+            <input placeholder="IBGE" name="ibge" type="text" id="ibge" size="8" /></label> 
+
+            <input placeholder="ESTADO" name="uf" type="text" id="uf" size="2" /></label><br/>
+          </details><br>
+
+          <button class="atualizar" id="atualizarbtn">Atualizar</button>
+          <br>
+          <button class="excluir" id="excluirbtn">Excluir</button>
+        </div>
+      </div>
+
+      <!--Inserção dos scripts-->
+      <script src="js/menu-hamburguer.js"></script> 
+      <script src="js/buscarOng.js"></script>
+      <script src="js/atualizarOng.js"></script>
+      <script src="js/deletarOng.js"></script>
+      <script src="js/cep.js"></script>
+</body>
+</html>

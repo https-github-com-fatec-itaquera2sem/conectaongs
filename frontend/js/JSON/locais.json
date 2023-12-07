@@ -1,0 +1,19 @@
+{
+    "locais": [
+        {"nome": "XYZ", "cidade": "São Paulo", "latitude": -23.559904, "longitude": -46.6593087},
+        {"nome": "XYZ", "cidade": "São Paulo", "latitude": -23.589991, "longitude": -46.635513},
+        {"nome": "XYZ", "cidade": "São Paulo", "latitude": -23.549110, "longitude": -46.660546},
+        {"nome": "XYZ", "cidade": "São Paulo", "latitude": -23.546669, "longitude": -46.703672},
+        {"nome": "XYZ", "cidade": "São Paulo", "latitude": -23.556683, "longitude": -46.653147},
+        {"nome": "XYZ", "cidade": "São Paulo", "latitude": -23.570930, "longitude": -46.667990},
+        {"nome": "XYZ", "cidade": "São Paulo", "latitude": -23.555511, "longitude": -46.643504},
+        {"nome": "XYZ", "cidade": "São Paulo", "latitude": -23.556879, "longitude": -46.649755},
+        {"nome": "XYZ", "cidade": "São Paulo", "latitude": -23.535060, "longitude": -46.634352},
+        {"nome": "XYZ", "cidade": "São Paulo", "latitude": -23.547103, "longitude": -46.656509},
+        {"nome": "XYZ", "cidade": "São Paulo", "latitude": -23.549644, "longitude": -46.618484},
+        {"nome": "XYZ", "cidade": "São Paulo", "latitude": -23.532911, "longitude": -46.677752},
+        {"nome": "XYZ", "cidade": "São Paulo", "latitude": -23.544753, "longitude": -46.626192},
+        {"nome": "XYZ", "cidade": "São Paulo", "latitude": -23.540766, "longitude": -46.657315}
+    ]
+  }
+  

@@ -1,0 +1,29 @@
+[
+  {
+    "buscar_usuario": {
+      "user_id": "1"
+    },
+    "gerenciar_usuarios": {
+      "nome": "Guilherme Campos",
+      "email": "email@gmail.com"
+    }
+  },
+  {
+    "buscar_usuario": {
+      "user_id": "2"
+    },
+    "gerenciar_usuarios": {
+      "nome": "Fábio Monte",
+      "email": "email@gmail2.com"
+    }
+  },
+  {
+    "buscar_usuario": {
+      "user_id": "3"
+    },
+    "gerenciar_usuarios": {
+      "nome": "Lucas Barbosa",
+      "email": "email@gmail3.com"
+    }
+  }
+]

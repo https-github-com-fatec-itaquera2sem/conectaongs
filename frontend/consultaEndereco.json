@@ -1,0 +1,39 @@
+{
+    "enderecos": [
+      {
+        "id": "1",
+        "nome": "Usuario1",
+        "email": "usuario@example.com",
+        "cep": "12345678",
+        "estado": "MG",
+        "cidade": "Belo Horizonte",
+        "bairro": "Savassi",
+        "logradouro": "Rua do meuDeusMeAjuda",
+        "numero": "200"
+      },
+      {
+        "id": "2",
+        "nome": "Usuario2",
+        "email": "admin@example.com",
+        "cep": "87654321",
+        "estado": "SP",
+        "cidade": "São Paulo",
+        "bairro": "Centro",
+        "logradouro": "Rua do Javascript",
+        "numero": "194"
+      },
+
+      {
+        "id": "3",
+        "email": "desenv@gmail.com",
+        "cep": "01010101",
+        "estado": "RS",
+        "cidade": "Porto Alegre",
+        "bairro": "Centro",
+        "logradouro": "Rua do PHP",
+        "numero": "194"
+      }
+    ]
+  }
+
+

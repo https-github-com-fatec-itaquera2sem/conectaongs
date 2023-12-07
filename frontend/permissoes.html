@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/permissoes.css">
+    <title>Permissões Usuarios</title>
+</head>
+<body>
+    <header>
+
+        <header>
+            <nav id="nav-bar">
+                <a class="logo" href="index.html"><span>Conecta</span>ONGs</a>
+                <ul class="nav-list">
+                    <li><a href="#nos">SOBRE NÓS</a></li>
+                    <li><a href="equipe.html">EQUIPE</a></li>
+                </ul>
+                <div class="acessar">
+                    <a href="login.html">
+                        <button class="btnacessar">ACESSAR</button>
+                    </a>
+                </div>
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()" id="btn-mobile"><img src="css/images/menu.png" alt=""></button>
+                </div>
+            </nav>
+        
+            <div class="mobile-menu">
+                <ul class="nav-list">
+                    <li><a href="#nos">SOBRE NÓS</a></li>
+                    <li><a href="equipe.html">EQUIPE</a></li>
+                </ul>
+                <div class="acessar">
+                    <a href="login.html">
+                        <button class="btnacessar">ACESSAR</button>
+                    </a>
+                </div>
+            </div>
+          </header>
+      <div class="caixa-geral">
+
+        <div class="caixa-np">
+            <h1 class="nomePainel">Painel de Permissões</h1>
+        </div>
+
+        <div class="buscarUser">
+            <h3>Buscar Usuário</h3>
+            <label for="id_user">ID do Usuário:</label>
+            <input type="number" placeholder="Digite o ID do Usuário" id="id_user">
+
+            <button class="buscarUserbtn" id="buscarbtn">Buscar</button>
+        </div>
+
+        <div class="UserInfo">
+            <h3>Informações do usuário</h3>
+            <label for="nomeUser">Nome:</label>
+            <input type="text" id="nomeUser" readonly>
+
+            <label for="emailUser">Email:</label>
+            <input type="text" id="emailUser" readonly>
+
+            <h3 class="titulo-permissoes">Permissões de acesso</h3>
+
+            <label for="adm">Administrador:</label>
+            <input type="checkbox" id="adm"><br><br>
+
+            <label for="comum">Comum:</label>
+            <input type="checkbox" id="comum"><br><br>
+
+            <button class="salvar" id="salvarbtn">Salvar</button>
+        </div>
+
+    </div>
+
+</body>
+<script src="js/menu-hamburguer.js"></script> 
+<script src="/js/BuscarPermissoes.js"></script>
+<script src="/js/CadastrarPermissoes.js"></script>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>Acessar ConectaONGs</title>
+</head>
+<body>
+
+  <header>
+    <nav id="nav-bar">
+        <a class="logo" href="index.html"><span>Conecta</span>ONGs</a>
+        <ul class="nav-list">
+            <li><a href="#nos">SOBRE NÓS</a></li>
+            <li><a href="equipe.html">EQUIPE</a></li>
+        </ul>
+        <div class="acessar">
+            <a href="login.html">
+                <button class="btnacessar">ACESSAR</button>
+            </a>
+        </div>
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()" id="btn-mobile"><img src="css/images/menu.png" alt=""></button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <ul class="nav-list">
+            <li><a href="#nos">SOBRE NÓS</a></li>
+            <li><a href="equipe.html">EQUIPE</a></li>
+        </ul>
+        <div class="acessar">
+            <a href="login.html">
+                <button class="btnacessar">ACESSAR</button>
+            </a>
+        </div>
+    </div>
+  </header>
+
+    <div class="container">
+        <form id="cardUser">
+            <h1 class="title">Entrar</h1>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha">
+            <!-- <p>Esqueceu a Senha? <a href="recuperarSenha.html" class="link-entre">Recuperar senha</a></p> -->
+            <p>Ainda não se cadastrou? <a href="cadastrar.html" class="link-entre">Cadastre-Se</a></p>
+            <button type="button" id="botaoEntrar">Entrar</button>         
+        </form>
+    </div>
+    <script src="js/menu-hamburguer.js"></script> 
+    <script src="js/buscarUsuario.js"></script>
+
+</body>
+</html>

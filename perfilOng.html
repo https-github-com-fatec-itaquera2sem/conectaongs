@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Perfil da Ong</title>
+</head>
+<body>
+    <script src="js/modal.js"></script>
+    <header>
+        <nav id="nav-bar">
+            <a class="logo" href="index.html"><span>Conecta</span>ONGs</a>
+            <ul class="nav-list">
+                <li><a href="#nos">SOBRE NÓS</a></li>
+                <li><a href="equipe.html">EQUIPE</a></li>
+            </ul>
+            <div class="acessar">
+                <a href="login.html">
+                    <button class="btnacessar">ACESSAR</button>
+                </a>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()" id="btn-mobile"><img src="css/images/menu.png" alt=""></button>
+            </div>
+        </nav>
+    
+        <div class="mobile-menu">
+            <ul class="nav-list">
+                <li><a href="#nos">SOBRE NÓS</a></li>
+                <li><a href="equipe.html">EQUIPE</a></li>
+            </ul>
+            <div class="acessar">
+                <a href="login.html">
+                    <button class="btnacessar">ACESSAR</button>
+                </a>
+            </div>
+        </div>
+      </header>
+      <!-- <div class="pesquisaOng">
+        <div class="buscaPerfil">
+            <label class="insira" for="inputID">Insira o ID da ONG:</label>
+            <input class="idid" type="text"  id="inputID">
+            <button class="busbtn" id="busbtn">Buscar</button>
+        </div> -->
+            
+    <div class="container-perfil">
+        <div class="sidebar">
+            <div class="topo">
+                <img src="img/perfil.png" alt="">
+
+                <h1 class="titulo" id="nomeong">NOME DA ONG</h1>
+
+                <div class="info">
+                    <p id="emailong">ongx@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="baixo">
+                <ul class="ul-side">
+                    
+                    <li class="linka2" id="linka2">RECURSOS</li>
+                    <li class="linka3" id="linka3">AVALIAÇÕES</li>
+                    <button class="openBtn" id="openModal">SOLICITAR RECURSOS</button>
+                </ul>
+            </div>  
+        </div>
+        <div class="central">
+
+            
+
+            <div class="valores" id="valores">
+
+                <h1>Recursos</h1>
+                <p id="recursosong"></p>
+            </div>
+
+            <div class="avalicoes" id="avaliacoes" style="display: none;">
+               
+                <div class="comentarios">
+                    <h1>Avalições</h1>
+                    <div class="perfil">
+                        <img src="img/perfil.png" alt="">
+                        <div class="user">
+                            <h1>Luis Carvalho</h1>
+                            <p>Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit. </p>
+                               
+                        </div>
+                    </div>
+                    <div id="novosComentarios"></div>
+ 
+                            </div>
+               
+ 
+                <div class="comente">
+                    <h1>Deixe sua avalição</h1>
+                    <ul id="stars" class="avaliacao">
+                        <li class="star-icon ativo" data-avaliacao="1"></li>
+                        <li class="star-icon" data-avaliacao="2"></li>
+                        <li class="star-icon" data-avaliacao="3"></li>
+                        <li class="star-icon" data-avaliacao="4"></li>
+                        <li class="star-icon" data-avaliacao="5"></li>
+                    </ul>
+                    <textarea id="comentario" cols="30" rows="10"></textarea>
+                    <button id="enviar">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="container">
+        <div class="modal">
+            <button class="closeModal" id="closeModal" tabindex="5"></button>
+            <form method="post" id="solicitarRecursos">
+                <h3 class="modalTitle">Solicitar Recursos</h3>
+                <fieldset>
+                    <p class="inputtTitle">Nome Completo</p>
+                    <input type="text" placeholder="Exemplo: Guilherme Campos Ferraz" name="user" tabindex="1"
+                        required autofocus>
+                </fieldset>
+                <fieldset>
+                    <p class="inputtTitle">E-mail</p>
+                    <input type="email" placeholder="Exemplo: email@gmail.com" name="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <p class="inputtTitle">O que deseja solicitar?</p>
+                    <input type="text-area" placeholder="Exemplo: Medicamentos" name="request" tabindex="3"
+                        required>
+                </fieldset>
+                <fieldset>
+                    <button class="requireBtn" name="requireButton" id="requireButton"
+                        tabindex="4">Solicitar</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</body>
+
+<script src="js/menu-hamburguer.js"></script> 
+<script src="js/ONGlista.js"></script>
+<script src="js/perfil.js"></script>
+<script src="js/estrela.js"></script>
+<script src="js/avaliacoes.js"></script>
+</html>

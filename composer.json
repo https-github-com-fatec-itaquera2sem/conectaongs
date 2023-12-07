@@ -1,0 +1,21 @@
+{
+  "autoload": {
+      "psr-4": {
+          "App\\": "backend/"
+      }
+  },
+  "require": {
+    "firebase/php-jwt": "^6.9"
+  },
+  "authors": [
+    {
+      "name": "Marcelo Almeida de Araujo"
+    },
+    {
+      "name": "Maria Gabriela Mariano Pereira"
+    },
+    {
+      "name": "João Vítor Moreira Dos Santos Neris"
+    }
+  ]
+}

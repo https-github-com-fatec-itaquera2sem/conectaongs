@@ -1,0 +1,35 @@
+{
+    "users": [
+      {
+        "id_user": 1,
+        "nomeUser": "João",
+        "emailUser": "joao@example.com",
+        "acessoUser" : "comum"
+        
+      },
+      {
+        "id_user": 2,
+        "nomeUser": "Maria",
+        "emailUser": "maria@example.com",
+        "acessoUser" : "adm"
+      },
+      {
+        "id_user": 3,
+        "nomeUser": "Carlos",
+        "emailUser": "carlos@example.com",
+        "acessoUser" : "comum"
+      },
+      {
+        "id_user": 4,
+        "nomeUser": "Ana",
+        "emailUser": "ana@example.com",
+        "acessoUser" : "adm"
+      },
+      {
+        "id_user": 5,
+        "nomeUser": "Pedro",
+        "emailUser": "pedro@example.com",
+        "acessoUser" : "comum"
+      }
+    ]
+  }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modal.css">
+    <title>Modal</title>
+</head>
+
+<body>
+    <script src="modal.js"></script>
+    <main>
+        <button class="openBtn" id="openModal">Solicitar Recursos</button>
+        <section class="container">
+
+            <div class="modal">
+                <button class="closeModal" id="closeModal" tabindex="5"></button>
+                <form method="post" id="solicitarRecursos">
+                    <h3 class="modalTitle">Solicitar Recursos</h3>
+                    <fieldset>
+                        <p class="inputTitle">Nome Completo</p>
+                        <input type="text" placeholder="Exemplo: Guilherme Campos Ferraz" name="user" tabindex="1"
+                            required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <p class="inputTitle">E-mail</p>
+                        <input type="email" placeholder="Exemplo: email@gmail.com" name="email" tabindex="2" required>
+                    </fieldset>
+                    <fieldset>
+                        <p class="inputTitle">O que deseja solicitar?</p>
+                        <input type="text-area" placeholder="Exemplo: Medicamentos" name="request" tabindex="3"
+                            required>
+                    </fieldset>
+                    <fieldset>
+                        <button class="requireBtn" name="requireButton" id="requireButton"
+                            tabindex="4">Solicitar</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>Cadastro ConectaONGs</title>
+</head>
+<body>
+    
+    <header>
+        <nav id="nav-bar">
+            <a class="logo" href="index.html"><span>Conecta</span>ONGs</a>
+            <ul class="nav-list">
+                <li><a href="#nos">SOBRE NÓS</a></li>
+                <li><a href="equipe.html">EQUIPE</a></li>
+            </ul>
+            <div class="acessar">
+                <a href="login.html">
+                    <button class="btnacessar">ACESSAR</button>
+                </a>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()" id="btn-mobile"><img src="css/images/menu.png" alt=""></button>
+            </div>
+        </nav>
+    
+        <div class="mobile-menu">
+            <ul class="nav-list">
+                <li><a href="#nos">SOBRE NÓS</a></li>
+                <li><a href="equipe.html">EQUIPE</a></li>
+            </ul>
+            <div class="acessar">
+                <a href="login.html">
+                    <button class="btnacessar">ACESSAR</button>
+                </a>
+            </div>
+        </div>
+      </header>
+    
+    
+    <div id="formUsuario" class="container" >
+        
+        <form id="cardUser">
+            <h1 class="title">Cadastre-se</h1>
+
+        <div class="toggle">
+            <input type="radio" name="escolhaForm" id="radioUsuario"checked/>
+            <label for="radioUsuario">Usuário</label>
+            <input type="radio" name="escolhaForm" id="radioONG"/>
+            <label for="radioONG">ONG</label>
+        </div>
+    
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        <div class="inputs-senhas">
+            <div class="inputsenha">
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha">
+            </div>
+            <div class="inputconfsenha">
+                <label for="conf_senha">Confirmar Senha:</label>
+                <input type="password" name="conf_senha" id="conf_senha">
+            </div>
+        </div> 
+        <p>Já Possui conta? <a href="login.html" class="link-entre">Entre Aqui</a></p>
+            <button type="button" id="botaoCadastro">Cadastrar</button>         
+        </form>
+
+    </div>
+
+    <div id="formONG" class="container" style="display: none;">
+
+        <form id="cardONG1" onsubmit="avancaForm(event, 'cardONG1', 'cardONG2');">
+
+            <h1 class="title">Cadastrar ONG</h1>
+
+            <div class="toggle">
+                <input type="radio" name="escolhaForm" id="radioUsuario" onchange="escondaB(this)"/>
+                <label for="radioUsuario">Usuário</label>
+                <input type="radio" name="escolhaForm" id="radioONG" onchange="escondaA(this)"checked/>
+                <label for="radioONG">ONG</label>
+            </div>
+
+            <label for="nome">Nome da ONG:</label>
+            <input type="text" name="nome" id="nomeOng">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="emailOng">
+            <label for="cnpj">CNPJ:</label>
+            <input type="text" name="cnpj" id="cnpjOng">
+
+            <div class="inputs-senhas">
+                <div class="inputsenha">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senhaOng">
+                </div>
+                <div class="inputconfsenha">
+                    <label for="conf_senha">Confirmar Senha:</label>
+                    <input type="password" name="conf_senha" id="conf_senhaOng">
+                </div>
+            </div>
+            <p>Já Possui conta? <a href="login.html" class="link-entre">Entre Aqui</a></p>
+            <button type="button" id="botaoCadastroOng">Cadastrar</button>
+
+        </form>
+
+        
+    </div>
+    <script src="js/menu-hamburguer.js"></script> 
+    <script src=js/cadastro.js></script>
+    <script src=js/criarUsuario.js></script>
+    <script src=js/criarOng.js></script>
+    
+</body>
+</html>

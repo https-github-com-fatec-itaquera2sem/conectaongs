@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleindex.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>ConectaONGs</title>
+     <link rel="stylesheet" href="css/leaflet.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav id="nav-bar">
+            <a class="logo" href="index.html"><span>Conecta</span>ONGs</a>
+            <ul class="nav-list">
+                <li><a href="#nos">SOBRE NÓS</a></li>
+                <li><a href="equipe.html">EQUIPE</a></li>
+            </ul>
+            <div class="acessar">
+                <a href="login.html">
+                    <button class="btnacessar">ACESSAR</button>
+                </a>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()" id="btn-mobile"><img src="css/images/menu.png" alt=""></button>
+            </div>
+        </nav>
+    
+        <div class="mobile-menu">
+            <ul class="nav-list">
+                <li><a href="#nos">SOBRE NÓS</a></li>
+                <li><a href="equipe.html">EQUIPE</a></li>
+            </ul>
+            <div class="acessar">
+                <a href="login.html">
+                    <button class="btnacessar">ACESSAR</button>
+                </a>
+            </div>
+        </div>
+      </header>
+
+  <main>
+    <div class="caixa-pesquisa">
+      <h2 class="conecta">Encontre ONGs de qualquer categoria e em qualquer lugar do pais!</h2>
+      <form id="form" role="search">
+        <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input type="search" id="busca" placeholder=" buscar por ''ONG de animais'' " aria-label="Procure por...">
+        </div>
+      </form>
+    </div>
+  </main>
+  <div class="bodycards">
+    <div class="slide-container swiper">
+        <div class="slide-content">
+            <h2 class="map-text">Confira os tipos de ONGs em alta</h2>
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="css/images/ongambiental.jpeg" alt="img-meio-ambiente" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">ONGS Ambientais</h2>
+                        <p class="description">Encontre ONGs relacionadas ao meio ambiente:</p>
+                        <button class="button-ong" id="button-ong"> <a href="perfilOng.html">Clique aqui</a></button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="css/images/ongsocial.jpeg" alt="img-social" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">ONGS Sociais</h2>
+                        <p class="description">Encontre ONGs relacionadas a sociedade:</p>
+                        <button class="button-ong" id="button-ong"><a href="perfilOng.html">Clique aqui</a></button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="css/images/onganimal.jpeg" alt="img-animais" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">ONGS Animais</h2>
+                        <p class="description">Encontre ONGs relacionadas aos animais:</p>
+                        <button class="button-ong" id="button-ong"><a href="perfilOng.html">Clique aqui</a></button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="css/images/ongeducacao.jpeg" alt="img-educacao" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">ONGS Educacionais</h2>
+                        <p class="description">Encontre ONGs relacionadas a educação:</p>
+                        <button class="button-ong" id="button-ong"><a href="perfilOng.html">Clique aqui</a></button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="css/images/ongcultural.jpeg" alt="img-cultura" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">ONGS Culturais</h2>
+                        <p class="description">Encontre ONGs relacionadas a cultura:</p>
+                        <button class="button-ong" id="button-ong"><a href="perfilOng.html">Clique aqui</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<div class="map-container">
+    <h2 class="map-text">ONGs próximas a você</h2>
+    <div id="mapid">
+
+    </div>
+</div>
+
+<div class="caixa-nos" id="nos">
+    <div class="nos">
+        <h1 class="sbnos">Sobre Nós</h1>
+        <p class="txtnos">O ConectaONGs é uma inovadora plataforma web que facilita a conexão entre ONGs, 
+            voluntários e aqueles em busca de auxílio. Ao permitir o cadastro de ONGs e a busca por organizações 
+            próximas, a plataforma promove uma colaboração eficiente, ampliando o alcance das iniciativas e 
+            fortalecendo o impacto social. Com recursos como vitrine virtual para ONGs e funcionalidade 
+            de busca geográfica, o ConectaONGs cria uma comunidade digital dedicada a inspirar ações solidárias 
+            e a construir um mundo mais colaborativo e compassivo. Conecte-se, inspire-se e faça a diferença no 
+            ConectaONGs.</p><br>
+        <img class="imgnos" src="img/teste3.png">
+    </div>
+ 
+ </div>
+
+<div class="rodape">
+    <div class="rodape-esquerdo">
+        <a class="logo" href="index.html"><span>Conecta</span>ONGs</a><br>
+        
+        <p class="endereco">Av. Miguel Ignácio Curi, 360 - Itaquera, São Paulo - SP, 08295-005</p>
+    </div>
+    <div class="rodape-direito">
+        <div class="infos">
+            <a href="#">Sobre nós</a>
+            <a href="equipe.html">Equipe</a>
+            <a href="#">Termos</a>
+            <a href="#">Políticas</a>
+        </div>
+    </div>
+    <div class="contato">
+        <p>SIGA NOSSA INSTAGRAM</p>
+        <div class="imagens">
+            <img src="img/instagram-logo.png" alt="instagram">
+        </div>
+    </div>
+</div>
+<p id="direitos">Todos os direitos reservados aos alunos do 2°semestre/2023 de DSM - FATEC ITAQUERA.</p>
+
+</body>
+<!-- Swiper JS -->
+<script src="/js/swiper-bundle.min.js"></script>
+<!-- JavaScript -->
+ <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+ <script src="js/menu-hamburguer.js"></script> 
+<script src="js/script.js"></script>
+<script src="js/mapa.js"></script>
+<script src="js/leaflet.js"></script>
+<script src="js/ONGlista.js"></script>
+</html>

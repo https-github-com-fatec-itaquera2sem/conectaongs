@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/painel-usuarios.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <title>Painel Ongs</title>
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+      <a class="logo" href="index.html"><span>Conecta</span>ONGs</a>
+      
+      <div class="sidebar-content">
+          <li class="list">
+              <a href="#" class="nav-link">
+                  <span class="link">🔴Lista de usuários</span>
+              </a>
+          </li>
+          <li class="list">
+              <a href="ongs.html" class="nav-link">
+                  <span class="link">🟢Lista de ONGs</span>
+              </a>
+          </li>
+          <li class="list">
+              <a href="painel-usuarios.html" class="nav-link">
+                  <span class="link">🟢Gerenciar Usuários</span>
+              </a>
+          </li>
+          <li class="list">
+              <a href="controleOng.html" class="nav-link">
+                  <span class="link">🟢Gerenciar ONGs</span>
+              </a>
+          </li>
+          <li class="list">
+            <a href="editEndereco.html" class="nav-link">
+                <span class="link">🟢Editar Endereço</span>
+            </a>
+          </li>
+          <li class="list">
+              <a href="permissoes.html" class="nav-link">
+                  <span class="link">🟢Gerenciar Permissões</span>
+              </a>
+          </li>
+          <li class="list">
+            <a href="cadRecursos.html" class="nav-link">
+                <span class="link">🟢Cadastrar Recursos</span>
+            </a>
+        </li>
+      </div>
+  </div>
+
+  <div></div>
+  <h1>Painel Administrativo - ONGs</h1>
+  </div>
+  <div class="card">
+    <h3>Buscar ONG</h3>
+    <label for="inputID">ID da ONG:</label>
+    <input type="text" id="inputID">
+    <button type="button" class="search" id="buscarbtn">Buscar</button>
+  </div>
+  
+
+  <div class="card card-b">
+    <h3>Gerenciar ONG</h3>
+    <label for="inputNome">Nome:</label>
+    <input type="text" id="inputNome">
+    <label for="inputEmail">Email:</label>
+    <input type="text" id="inputEmail">
+    <label for="inputEmail">CNPJ:</label>
+    <input type="text" id="inputCNPJ">
+
+    <!--Adicionar endereço-->
+    <details> 
+      <summary>Adicionar endereço</summary><br>
+      <input placeholder="CEP" name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+      onblur="pesquisacep(this.value);" /></label>
+
+      <input placeholder="LOGRADOURO" name="rua" type="text" id="rua" size="60" /></label>
+
+      <input placeholder="BAIRRO" name="bairro" type="text" id="bairro" size="40" /></label>
+
+      <input placeholder="CIDADE" name="cidade" type="text" id="cidade" size="40" /></label>
+
+      <input placeholder="IBGE" name="ibge" type="text" id="ibge" size="8" /></label> 
+
+      <input placeholder="ESTADO" name="uf" type="text" id="uf" size="2" /></label><br/>
+    </details><br>
+
+    <button class="update" id="atualizarbtn">Atualizar</button>
+    <br>
+    <button class="delete" id="excluirbtn">Excluir</button>
+  </div>
+</div>
+
+    <!--Inserção dos scripts-->
+    <script src="js/buscarOng.js"></script>
+    <script src="js/atualizarOng.js"></script>
+    <script src="js/deletarOng.js"></script>
+    <script src="js/cep.js"></script>
+</body>
+</html>

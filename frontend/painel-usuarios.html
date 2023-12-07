@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/painel-usuarios.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <title>Painel Usuários</title>
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <a class="logo" href="index.html"><span>Conecta</span>ONGs</a>
+        
+        <div class="sidebar-content">
+            <li class="list">
+                <a href="../login.html" class="nav-link">
+                    <span class="link">Lista de usuários</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href=".../login.html" class="nav-link">
+                    <span class="link">Lista de ONGs</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="painel-usuarios.html" class="nav-link">
+                    <span class="link">Gerenciar Usuários</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="controleOng.html" class="nav-link">
+                    <span class="link">Gerenciar ONGs</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="editEndereco.html" class="nav-link">
+                    <span class="link">Editar Endereço</span>
+                </a>
+              </li>
+            <li class="list">
+                <a href=".../login.html" class="nav-link">
+                    <span class="link">Gerenciar Permissões</span>
+                </a>
+            </li>
+        </div>
+    </div>
+
+
+    <div></div>
+    <h1>Painel Administrativo - Usuários</h1>
+    <main>
+        <div class="card">
+            <h3>Buscar Usuário</h3>
+            <label id="user_id_label" for="getUserId">ID do Usuário:</label>
+            <input class="user_id" type="text" id="getUserId" min="1" placeholder="xx">
+            <button type="button" class="search" id="buscar">Buscar</button>
+        </div>
+
+        <div class="card card-b">
+            <h3>Gerenciar Usuário</h3>
+            <label for="inpuNome">Nome:</label>
+            <input type="text" id="inpuNome">
+            <label for="email">Email:</label>
+            <input type="text" id="inputEmail">
+            <button type="button" class="update" id="update" >Atualizar</button>
+            <br>
+            <button type="button" class="delete" id="delete">Excluir</button>
+
+            
+        </div>
+
+        <script src="js/deletar-usuarios.js"></script>
+        <script src="js/buscar-usuarios.js"></script>
+        <script src="js/update-usuarios.js"></script>
+    </main>
+</body>
+
+</html>

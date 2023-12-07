@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Perfil da Ong</title>
+</head>
+<body>
+    <script src="modal.js"></script>
+    <header>
+        <nav id="nav-bar">
+            <a class="logo" href="index.html"><span>Conecta</span>ONGs</a>
+            <ul class="nav-list">
+                <li><a href="#nos">SOBRE NÓS</a></li>
+                <li><a href="equipe.html">EQUIPE</a></li>
+            </ul>
+            <div class="acessar">
+                <a href="login.html">
+                    <button class="btnacessar">ACESSAR</button>
+                </a>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()" id="btn-mobile"><img src="css/images/menu.png" alt=""></button>
+            </div>
+        </nav>
+    
+        <div class="mobile-menu">
+            <ul class="nav-list">
+                <li><a href="#nos">SOBRE NÓS</a></li>
+                <li><a href="equipe.html">EQUIPE</a></li>
+            </ul>
+            <div class="acessar">
+                <a href="login.html">
+                    <button class="btnacessar">ACESSAR</button>
+                </a>
+            </div>
+        </div>
+      </header>
+
+    <div class="container-perfil">
+        <div class="sidebar">
+            <div class="topo">
+                <img src="img/perfil.png" alt="">
+                <h1 class="titulo">NOME DA ONG</h1>
+                <div class="info">
+                    <p>ongx@gmail.com</p>
+                    <p>+55 (11)2222-2222</p>
+                </div>
+            </div>
+
+            <div class="baixo">
+                <ul class="ul-side">
+                    <li class="linka1" id="linka1">SOBRE NÓS</li>
+                    <li class="linka2" id="linka2">VALORES</li>
+                    <li class="linka3" id="linka3">AVALIAÇÕES</li>
+                    <button class="openBtn" id="openModal">SOLICITAR RECURSOS</button>
+                </ul>
+            </div>  
+        </div>
+        <div class="central">
+
+            <div class="sobre" id="sobre" style="display: flex;">
+                <h1>História</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Corrupti, vero! Debitis tempore sunt pariatur deleniti sapiente sit architecto vel a, 
+                    olestias optio cumque, iste non, ratione nulla maxime dolorum voluptates!</p>
+            </div>
+
+            <div class="valores" id="valores" style="display: none;">
+                <h1>Missão</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde mollitia sequi iste suscipit, 
+                    consequuntur, non veritatis repudiandae et illo neque assumenda iure placeat. 
+                    Amet alias obcaecati excepturi, cupiditate perspiciatis optio?</p>
+
+                <h1>Recursos</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Placeat, deserunt voluptatibus nulla sit assumenda sapiente amet fuga explicabo provident 
+                    expedita deleniti accusantium atque, praesentium ipsam? Et sunt soluta velit tempora?</p>
+            </div>
+
+            <div class="avalicoes" id="avaliacoes" style="display: none;">
+                
+                <div class="comentarios">
+                    <h1>Avalições</h1>
+                    <div class="perfil">
+                        <img src="img/perfil.png" alt="">
+                        <div class="user">
+                            <h1>Luis Carvalho</h1>
+                            <p>Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comente">
+                    <h1>Deixe sua avalição</h1>
+                    <ul class="avaliacao">
+                        <li class="star-icon ativo" data-avaliacao="1"></li>
+                        <li class="star-icon" data-avaliacao="2"></li>
+                        <li class="star-icon" data-avaliacao="3"></li>
+                        <li class="star-icon" data-avaliacao="4"></li>
+                        <li class="star-icon" data-avaliacao="5"></li>
+                    </ul>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <button id="enviar">Enviar</button>
+                </div>
+            </div>
+    </div>
+    <section class="container">
+        <div class="modal">
+            <button class="closeModal" id="closeModal" tabindex="5"></button>
+            <form method="post" id="solicitarRecursos">
+                <h3 class="modalTitle">Solicitar Recursos</h3>
+                <fieldset>
+                    <p class="inputtTitle">Nome Completo</p>
+                    <input type="text" placeholder="Exemplo: Guilherme Campos Ferraz" name="user" tabindex="1"
+                        required autofocus>
+                </fieldset>
+                <fieldset>
+                    <p class="inputtTitle">E-mail</p>
+                    <input type="email" placeholder="Exemplo: email@gmail.com" name="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <p class="inputtTitle">O que deseja solicitar?</p>
+                    <input type="text-area" placeholder="Exemplo: Medicamentos" name="request" tabindex="3"
+                        required>
+                </fieldset>
+                <fieldset>
+                    <button class="requireBtn" name="requireButton" id="requireButton"
+                        tabindex="4">Solicitar</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</body>
+<script src="js/menu-hamburguer.js"></script> 
+<script src="js/perfil.js"></script>
+<script src="js/estrela.js"></script>
+</html>
