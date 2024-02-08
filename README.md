@@ -1,5 +1,5 @@
 <br id="topo">
-** Toda a organização das equipes e gerwenciamento do projeto e evoluções estão em repositórios privados
+* Toda a organização das equipes e gerenciamento do projeto e evoluções estão em repositórios privados *
 <h1 align="center"> FATEC Itaquera - 2º Semestre DSM </h1>
 
 <p align="center">
