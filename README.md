@@ -29,10 +29,10 @@ A documentação a seguir descreve os requisitos e especificações necessários
 <span id="atores">
     
  ## 💻 Atores: 
- <i>ADM Geral:</i> Supervisão e checagem de informações; verificação de informações da ONG; autenticação; verificação de colaborações/transações. 
- <i>ADM de ONG:</i> Cadastrar a ONG; avaliar perfil dos voluntários e recrutá-los. 
- <i>Voluntário:</i> Se inscrever na ONG; adicionar preferências e, possui permissões de acesso de usuário. 
- <i>Usuário Cadastrado:</i> Possui permissões de acesso de usuários não cadastrados; pode se tornar voluntário e realiza avaliação. 
+ <i>ADM Geral:</i> Supervisão e checagem de informações; verificação de informações da ONG; autenticação; verificação de colaborações/transações. </br>
+ <i>ADM de ONG:</i> Cadastrar a ONG; avaliar perfil dos voluntários e recrutá-los. </br>
+ <i>Voluntário:</i> Se inscrever na ONG; adicionar preferências e, possui permissões de acesso de usuário.</br> 
+ <i>Usuário Cadastrado:</i> Possui permissões de acesso de usuários não cadastrados; pode se tornar voluntário e realiza avaliação.</br> 
  <i>Visitante Não Cadastrado:</i> Tem acesso a informações gerais. 
 
  → [Voltar ao topo](#topo)
