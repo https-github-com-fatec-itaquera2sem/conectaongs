@@ -216,7 +216,7 @@ Problemas com a Comunicação Interna dos Grupos e com os Demais.
 |Fernando Takayoshi Soares Koge| [GitHub](https://github.com/FernandoKoge) |
 |José Henrique Almeida Motta| [GitHub](https://github.com/Jrique) |
 |Lucas José Gomes da Silva| [GitHub](https://github.com/LukasJSilva) |
-|**Murilo Vieira Nascimento**| [GitHub](https://github.com/AnnaDays) |
+|**Murilo Vieira Nascimento**| [GitHub](https://github.com/nasc2005) |
 
 
 → [Voltar ao topo](#topo)
